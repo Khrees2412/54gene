@@ -11,11 +11,12 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: static;
+	position: sticky;
+	z-index: 999;
 	padding: 40px;
 	top: 0;
 	left: 0;
-	color: #ffffff;
+	background-color: #ffffff;
 }
 .navbar ul {
 	display: flex;
