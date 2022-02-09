@@ -4,3 +4,5 @@
 // 					START NOW Cookie Use We use cookies to ensure a smooth
 // 					browsing experience. By continuing we assume you accept the
 // 					use of cookies. Accept Learn More
+
+const navbar = document.querySelector(".navbar")
