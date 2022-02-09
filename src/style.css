@@ -13,11 +13,21 @@ body {
 	align-items: center;
 	position: sticky;
 	z-index: 999;
-	padding: 40px;
+	padding: 30px;
 	top: 0;
 	left: 0;
 	background-color: #ffffff;
+	/* text-decoration: underline; */
 }
+/* .navbar::after {
+	content: " ";
+	text-decoration: underline;
+	background-color: #50555c;
+	width: 100%;
+	position: absolute;
+	top: 100px;
+	left: 0;
+} */
 .navbar ul {
 	display: flex;
 	justify-content: space-between;
@@ -52,9 +62,15 @@ body {
 }
 .hero::after {
 	content: url("//uploads.strikinglycdn.com/page/images/backgrounds/bg7.jpg");
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 .power {
 	width: 35px;
+}
+.power-talk {
+	font-weight: 800;
+	font-size: 13px;
 }
 .cta {
 	display: flex;
@@ -63,12 +79,16 @@ body {
 }
 .phone-img {
 	width: 620px;
-	height: 1050px;
+	height: 1030px;
+	margin-top: 40px;
 }
 .inside {
 	position: absolute;
 	top: 80px;
 	left: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .right {
 	margin-left: 40px;
@@ -99,10 +119,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 40px;
+	margin-bottom: 30px;
 }
 .about h1 {
 	color: #ff6f22;
-	font-size: 28.8px;
+	font-size: 30px;
 	line-height: 34px;
 	font-weight: 700;
 	margin-bottom: 15px;
@@ -120,7 +141,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin: auto;
+	/* margin: auto; */
 }
 .articles h1 {
 	color: #ff6f22;
@@ -203,4 +224,10 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (width: 375px) {
+	nav {
+		display: none;
+	}
 }
