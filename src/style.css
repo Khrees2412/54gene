@@ -6,7 +6,9 @@
 body {
 	font-family: "Bitter", "serif";
 }
-
+.hamburger {
+	display: none;
+}
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -34,7 +36,7 @@ body {
 	align-items: center;
 	font-family: "Open Sans", "sans-serif";
 }
-.navbar:visited {
+.navbar:active {
 	color: #ff6f22;
 }
 .navbar li,
@@ -226,8 +228,46 @@ footer {
 	align-items: center;
 }
 
-@media screen and (width: 375px) {
-	nav {
+@media screen and (max-width: 375px) {
+	.navbar {
+		padding: 10px;
+		position: relative;
+	}
+	.navbar ul {
 		display: none;
+	}
+	.hamburger {
+		display: block;
+		position: sticky;
+		background-color: #ff6f22;
+		width: 100px;
+		min-height: 50px;
+		border-radius: 5px;
+	}
+	.icon1,
+	.icon2,
+	.icon3 {
+		min-height: 20px;
+		width: 40px;
+
+		background-color: #ffffff;
+	}
+	.inside {
+		position: absolute;
+		top: 80px;
+		left: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.phone-img {
+		height: 500px;
+		width: 400px;
+	}
+	.right,
+	.news,
+	.posts {
+		flex-direction: column;
 	}
 }
